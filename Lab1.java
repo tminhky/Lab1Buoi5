@@ -462,7 +462,7 @@ class TH5 {
 				System.out.println("Tong so phong hoc hien co la: "+listPH.tongPhongHoc());
 				break;
 			case 9:
-				System.out.println("Tong so phong hoc ly thuyet hienn co la: "+listPH.tongPhongHocLT());
+				System.out.println("Tong so phong hoc ly thuyet hien co la: "+listPH.tongPhongHocLT());
 				break;
 			case 10:
 				System.out.println("Tong so phong hoc may tinh hien co la: "+listPH.tongPhongHocMT());
@@ -513,31 +513,31 @@ class TH5 {
 	
 	public static void nhapCung() throws Exception
 	{
-		PhongHoc ph1 = new PhongLyThuyet("PH001", "Day A", 150, 10, true);
+		PhongHoc ph1 = new PhongLyThuyet("001", "Day A", 100, 15, true);
 		listPH.themPhongHoc(ph1);
-		PhongHoc ph2 = new PhongLyThuyet("PH002", "Day A", 200, 20, true);
+		PhongHoc ph2 = new PhongLyThuyet("002", "Day A", 250, 25, true);
 		listPH.themPhongHoc(ph2);
-		PhongHoc ph3 = new PhongLyThuyet("PH003", "Day B", 150, 17, false);
+		PhongHoc ph3 = new PhongLyThuyet("003", "Day B", 150, 13, false);
 		listPH.themPhongHoc(ph3);
-		PhongHoc ph4 = new PhongLyThuyet("PH004", "Day C", 200, 25, true);
+		PhongHoc ph4 = new PhongLyThuyet("004", "Day C", 200, 30, true);
 		listPH.themPhongHoc(ph4);
 		
-		PhongHoc ph5 = new PhongMayTinh("PH005", "Day B", 50, 10, 34);
+		PhongHoc ph5 = new PhongMayTinh("005", "Day B", 150, 15, 35);
 		listPH.themPhongHoc(ph5);
-		PhongHoc ph6 = new PhongMayTinh("PH006", "Day B", 100, 10, 70);
+		PhongHoc ph6 = new PhongMayTinh("006", "Day B", 110, 10, 50);
 		listPH.themPhongHoc(ph6);
-		PhongHoc ph7 = new PhongMayTinh("PH007", "Day C", 100, 10, 30);
+		PhongHoc ph7 = new PhongMayTinh("007", "Day C", 110, 20, 30);
 		listPH.themPhongHoc(ph7);
-		PhongHoc ph8 = new PhongMayTinh("PH008", "Day C", 50, 10, 35);
+		PhongHoc ph8 = new PhongMayTinh("008", "Day C", 150, 20, 35);
 		listPH.themPhongHoc(ph8);
 		
-		PhongHoc ph9 = new PhongThiNghiem("PH009", "DayD", 200, 20, 150, true);
+		PhongHoc ph9 = new PhongThiNghiem("009", "DayD", 220, 25, 50, true);
 		listPH.themPhongHoc(ph9);
-		PhongHoc ph10 = new PhongThiNghiem("PH010", "Day D", 200, 20, 150, false);
+		PhongHoc ph10 = new PhongThiNghiem("010", "Day D", 230, 20, 100, false);
 		listPH.themPhongHoc(ph10);
-		PhongHoc ph11 = new PhongThiNghiem("PH011", "Day D", 200, 20, 150, true);
+		PhongHoc ph11 = new PhongThiNghiem("011", "Day D", 240, 23, 150, true);
 		listPH.themPhongHoc(ph11);
-		PhongHoc ph12 = new PhongThiNghiem("PH012", "Day D", 200, 15, 150, true);
+		PhongHoc ph12 = new PhongThiNghiem("012", "Day E", 250, 13, 250, true);
 		listPH.themPhongHoc(ph12);
 	}
 	
@@ -648,14 +648,14 @@ class TH5 {
 	public static void xuatTieuDePhongMT()
 	{
 		inGachNgang1();
-		System.out.printf("|%-15s|%-10s|%-15s|%-15s|%-15s|%-15s|\n", "Ma phong hoc", "Day nha", "Dien tich(m^2)", "So bong den", "May chieu", "Danh gia");
+		System.out.printf("|%-15s|%-10s|%-15s|%-15s|%-15s|%-15s|\n", "Ma phong hoc", "Day nha", "Dien tich(m^2)", "So bong den", "So may tinh", "Danh gia");
 		inGachNgang1();
 	}
 	
 	public static void xuatTieuDePhongTN()
 	{
 		inGachNgang2();
-		System.out.printf("|%-15s|%-10s|%-15s|%-15s|%-15s|%-15s|%-15s|\n", "Ma phong hoc", "Day nha", "Dien tich(m^2)", "So bong den", "May chieu", "Danh gia");
+		System.out.printf("|%-15s|%-10s|%-15s|%-15s|%-15s|%-15s|%-15s|\n", "Ma phong học", "Day nhà", "Dien tich(m^2)", "So bong den", "Suc chua", "Bon rua", "Danh gia");
 		inGachNgang2();
 	}
 	
